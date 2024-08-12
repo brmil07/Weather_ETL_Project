@@ -1,5 +1,6 @@
+***
 # Weather API Project
-
+***
 This project is a simple command-line tool that fetches the current weather for a given city using the OpenWeatherMap API.
 
 ## Prerequisites
@@ -29,3 +30,17 @@ Example on how to run the script:
 
 ```bash
 python weather.py <city_name>
+```
+
+***
+# How to run the script using Docker
+***
+- Navigate to the directory containing the Dockerfile and run the following command to build the Docker image
+- Build the docker image:
+```basg
+docker build -t weather-api .
+```
+- After building the image, run the container with the following command:
+```bash
+docker run --rm weather-api python weather.py <city_name>
+```

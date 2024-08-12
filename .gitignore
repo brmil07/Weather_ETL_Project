@@ -163,4 +163,3 @@ cython_debug/
 
 # Ignore secrets.py containing sensitive information
 local/secrets.py
-config.py
