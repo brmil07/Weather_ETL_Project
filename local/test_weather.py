@@ -1,9 +1,9 @@
 import pytest
 import requests
-from weather import get_weather, print_weather
+from local.weather import get_weather, print_weather
 from unittest.mock import patch
-from secrets import API_KEY
-from config import BASE_URL
+from local.secrets import API_KEY
+from local.config import BASE_URL
 
 # Test the get_weather function
 def test_get_weather_success():

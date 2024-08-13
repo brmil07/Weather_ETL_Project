@@ -35,6 +35,8 @@ python weather.py <city_name>
 ***
 # How to run the script using Docker
 ***
+
+## Dockerfile
 - Navigate to the directory containing the Dockerfile and run the following command to build the Docker image
 - Build the docker image:
 ```basg
@@ -43,4 +45,27 @@ docker build -t weather-api .
 - After building the image, run the container with the following command:
 ```bash
 docker run --rm weather-api python weather.py <city_name>
+```
+
+## Docker compose
+- To start the service:
+```bash
+docker-compose up
+```
+- To check the running container:
+```bash
+docker ps
+```
+- To stop the service:
+```bash
+docker-compose down
+```
+
+***
+# How to run unit test
+***
+- Navigate to local folder
+- Execute this command:
+```bash
+pytest test_weather.py -v
 ```

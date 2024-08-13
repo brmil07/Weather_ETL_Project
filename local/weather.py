@@ -1,8 +1,8 @@
 import requests
 import sys
 from datetime import datetime
-from config import BASE_URL
-from secrets import API_KEY
+from local.config import BASE_URL
+from local.secrets import API_KEY
 
 def get_weather(city_name):
     """

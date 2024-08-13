@@ -1,0 +1,9 @@
+services:
+  weather:
+    build: .
+    command: python weather.py Dresden
+    container_name: weather_api
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
